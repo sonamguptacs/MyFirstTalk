@@ -6,7 +6,8 @@ const PrivateFileDownload = () => {
   const handleDownload = async () => {
     try {
       const response = await axios({
-        url: 'http://localhost:5000/download',
+        url:
+          'https://cors-anywhere.herokuapp.com/https://techtalks.s3.eu-north-1.amazonaws.com/GoodPartsOfJavaScript.pdf',
         method: 'GET',
         responseType: 'blob',
       })
